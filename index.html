@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>Laptop Rental Website</title>
+</head>
+<body>
+  <nav class="w3-bar w3-black">
+    <a href="#home" class="w3-button w3-bar-item">Home</a>
+    <a href="#laptops" class="w3-button w3-bar-item">Laptops</a>
+    <a href="#rental" class="w3-button w3-bar-item">Rental</a>
+    <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+  </nav>
+
+  <header class=" w3-center"  >
+    <h1 >Snaptechlend</h1>
+  </header>
+  
+
+ 
+    <h2>Laptops for Rent</h2>
+</section>
+    <table id="t1" >
+        <thead>
+            <tr class="t2"><th></th>
+            <th></th>
+        <th></th></tr>
+        </thead>
+        <tbody>
+<tr class="t2"><th><li>
+          <img src="images (1).jpeg" alt="Laptop 1">
+          <h3>Dell vostro</h3>
+          <p>Rs. 40 per Hour
+          <button id="rent1-Dell vostro">Rent</button></p>
+          <p>Rs. 450 per day
+            <button id="rent2-Dell vostro">Rent</button></p>
+         <p>Rs. 2000 per Month
+                <button id="rent3-Dell vostro">Rent</button></p>
+        </li></th><th>
+        <li>
+          <img src="images.jpeg" alt="Laptop 2">
+          <h3>HP-Pavilion</h3>
+          <p>Rs. 60 per Hour
+            <button id="rent1-HP Pavilion">Rent</button></p>
+          <p>Rs. 600 per day
+          <button id="rent2-HP Pavilion">Rent</button></p>
+          <p>Rs. 1800 per Month
+            <button id="rent3-HP Pavilion">Rent</button></p>
+        </li></th><th>
+        <li>
+          <img src="images (2).jpeg" alt="Laptop 3">
+          <h3>Hp-Intel</h3>
+          <p>Rs. 50 per Hour
+            <button id="rent1-Hp intel">Rent</button></p>
+          <p>Rs. 750 per day
+          <button id="rent2-Hp intel">Rent</button></p>
+          <p>Rs. 2200 per Month
+            <button id="rent3-Hp intel">Rent</button></p>
+        </li></th><th>
+        <li>
+            <img src="images (4).jpeg" alt="Laptop 4">
+            <h3>Lenovo Think pad</h3>
+            <p>Rs. 30 per Hour
+                <button id="rent1-Lenovo Think pad">Rent</button></p>
+            <p>Rs. 450 per day
+            <button id="rent2-Lenovo Think pad">Rent</button></p>
+            <p>Rs. 3000 per Month
+                <button id="rent3-Lenovo Think pad">Rent</button></p>
+          </li></th><th>
+            <li>
+                <img src="download.jpeg" alt="Laptop 5">
+                <h3>Mac Air</h3>
+                <p>Rs. 110 per Hour
+                    <button id="rent1-Mac Air">Rent</button></p>
+                <p>Rs. 900 per day
+                <button id="rent2-Mac Air">Rent</button></p>
+                <p>Rs. 4000 per Month
+                    <button id="rent3-Mac Air">Rent</button></p>
+              </li></th>
+      </ul>
+    </tr>
+    <tr class="t2"><th><li>
+        <img src="images (3).jpeg" alt="Laptop 6">
+        <h3>HP-360</h3>
+        <p>Rs. 30 per Hour
+        <button id="rent1-HP 360">Rent</button></p>
+        <p>Rs. 650 per day
+          <button id="rent2-HP 360">Rent</button></p>
+       <p>Rs. 2500 per Month
+              <button id="rent3-HP 360">Rent</button></p>
+      </li></th><th>
+      <li>
+        <img src="images (5).jpeg" alt="Laptop 7">
+        <h3>Dell Core</h3>
+        <p>Rs. 90 per Hour
+          <button id="rent1-Dell Core">Rent</button></p>
+        <p>Rs. 800 per day
+        <button id="rent2-Dell Core">Rent</button></p>
+        <p>Rs. 2800 per Month
+          <button id="rent3-Dell Core">Rent</button></p>
+      </li></th><th>
+      <li>
+        <img src="images (6).jpeg" alt="Laptop 8">
+        <h3>HP-Tuf gaming</h3>
+        <p>Rs. 100 per Hour
+          <button id="rent1-HP Tuf gaming">Rent</button></p>
+        <p>Rs. 950 per day
+        <button id="rent2-HP Tuf gaming">Rent</button></p>
+        <p>Rs. 3000 per Month
+          <button id="rent3-HP Tuf gaming">Rent</button></p>
+      </li></th><th>
+      <li>
+          <img src="images (8).jpeg" alt="Laptop 9">
+          <h3>Acer</h3>
+          <p>Rs. 70 per Hour
+              <button id="rent1-Acer">Rent</button></p>
+          <p>Rs. 850 per day
+          <button id="rent2-Acer">Rent</button></p>
+          <p>Rs. 2900 per Month
+              <button id="rent3-Acer">Rent</button></p>
+        </li></th>
+        <th>
+            <li>
+                <img src="download (1).jpeg" alt="Laptop 10">
+                <h3>Mac Air pro</h3>
+                <p>Rs. 190 per Hour
+                    <button id="rent1-Mac Air pro">Rent</button></p>
+                <p>Rs. 1200 per day
+                <button id="rent2-Mac Air pro">Rent</button></p>
+                <p>Rs. 5000 per Month
+                    <button id="rent3-Mac Air pro">Rent</button></p>
+              </li></th>
+    </ul>
+  </tr>
+</tbody>
+</table>
+
+  <script>
+    document.querySelectorAll('button[id^="rent1-"]').forEach(function(button) {
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+    var laptopId = event.target.id.replace('rent1-', '');
+    alert(`You have rented  ${laptopId} for Rs. ${getLaptopPrice1(laptopId)} per hour.`);
+  });
+});
+document.querySelectorAll('button[id^="rent2-"]').forEach(function(button) {
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+    var laptopId = event.target.id.replace('rent2-', '');
+    alert(`You have rented  ${laptopId} for Rs. ${getLaptopPrice2(laptopId)} per day.`);
+  });
+});
+
+document.querySelectorAll('button[id^="rent3-"]').forEach(function(button) {
+  button.addEventListener('click', function(event) {
+    event.preventDefault();
+    var laptopId = event.target.id.replace('rent3-', '');
+    alert(`You have rented  ${laptopId} for Rs. ${getLaptopPrice3(laptopId)} per Month.`);
+  });
+});
+
+// Get laptop price by ID
+function getLaptopPrice1(id) {
+  switch (id) {
+    case 'Dell vostro':
+      return 40;
+    case 'HP Pavilion':
+      return 60;
+    case 'Hp intel':
+      return 50;
+    case 'Lenovo Think pad':
+      return 30;
+      case 'Mac Air':
+      return 110;
+      case 'HP 360':
+      return 30;
+    case 'Dell Core':
+      return 90;
+    case 'HP Tuf gaming':
+      return 100;
+    case 'Acer':
+      return 70;
+      case 'Mac Air pro':
+      return 190;
+    default:
+      return 0;
+  }
+}
+
+function getLaptopPrice2(id) {
+  switch (id) {
+    case 'Dell vostro':
+      return 450;
+    case 'HP Pavilion':
+      return 600;
+    case 'Hp intel':
+      return 750;
+    case 'Lenovo Think pad':
+      return 450;
+      case 'Mac Air':
+      return 900;
+      case 'HP 360':
+      return 650;
+    case 'Dell Core':
+      return 800;
+    case 'HP Tuf gaming':
+      return 900;
+    case 'Acer':
+      return 850;
+      case 'Mac Air pro':
+      return 1200;
+    default:
+      return 0;
+  }
+  
+}
+function getLaptopPrice3(id) {
+  switch (id) {
+    case 'Dell vostro':
+      return 2000;
+    case 'HP Pavilion':
+      return 1800;
+    case 'Hp intel':
+      return 2200;
+    case 'Lenovo Think pad':
+      return 3000;
+      case 'Mac Air':
+      return 4000;
+      case 'HP 360':
+      return 2500;
+    case 'Dell Core':
+      return 2800;
+    case 'HP Tuf gaming':
+      return 3000;
+    case 'Acer':
+      return 2900;
+      case 'Mac Air pro':
+      return 5000;
+    default:
+      return 0;
+  }
+}
+  </script>
+</body>
+</html>
